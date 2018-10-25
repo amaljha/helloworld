@@ -8,7 +8,7 @@ public class WelcomeController {
 	private static final String welcomemsg = "Welcome Mr. %s!";
     @GetMapping("/welcome/user")
     @ResponseBody
-    public Welcome welcomeUser(@RequestParam(name="name", required=false, defaultValue="Java Fan") String name) {
+    public Welcome welcomeUser(@RequestParam(name="name", required=false, defaultValue="Java Fan like amal") String name) {
         return new Welcome(String.format(welcomemsg, name));
     }
 }
